@@ -45,3 +45,38 @@ h1,h2,h3,h4,h5,h6,p{
     flex-direction: column;
   }
 
+
+/* header */
+
+.header{
+    background-color: #fff;
+    padding: 25px 0;
+}
+
+ .header .header-logo{
+    margin-right: 40px;
+}
+
+.header nav a{
+    margin-right: 57px;
+    text-decoration: none;
+    color: #595F68;
+    font-weight: 400;
+}
+
+.header h5{
+    color: #595F68;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+}
+
+.header .toggle{
+    padding: 1vh 0 0 0.5vw;
+}
+
+.header .header-auth a{
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 40px;
+}
