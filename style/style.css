@@ -1,0 +1,47 @@
+body{
+    margin: 0; /* отступы */
+    font-family: 'Mulish', sans-serif;
+    font-size: 14px;
+    color:#595F68;
+    background: #fff;
+    -webkit-font-smoothing:antialiased;
+
+
+    }
+
+    *, /* авто подсчет отступов */
+*:before
+*:after{
+    box-sizing: border-box;}
+
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+}
+
+.container{
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+
+.flex{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.space-between{
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.column{
+
+    flex-direction: column;
+  }
+
