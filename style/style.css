@@ -83,6 +83,9 @@ h1,h2,h3,h4,h5,h6,p{
 
 
 /*Intro*/
+.intro img{
+    width: 100%;
+}
 .form-change{
     top: 30%;
     left: 30%;
@@ -96,22 +99,22 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 .btn{
-    
+
     display: inline-block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    
+
     border: 1px solid #FA4616;
     background-color: #FA4616;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
     padding: 11px 25px;
-    
+
     font-size: 14px;
     font-weight: 400;
     color: #fff;
-   
+
     text-transform: uppercase;
     box-sizing: border-box;
      border-radius: 3px;
@@ -149,7 +152,12 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .change-btn:nth-child(2){
     margin-left: 91px;
-    color: #fff;
-    border: none;
-    background: linear-gradient(132.97deg, rgba(250, 70, 22, 0.53) 7.3%, #FA4616 62.25%)
 }
+
+.change-btn:hover{
+    background: linear-gradient(132.97deg, rgba(250, 70, 22, 0.53) 7.3%, #FA4616 62.25%);
+    border: none;
+    color: #fff;
+    transition: .4s linear;
+}
+
