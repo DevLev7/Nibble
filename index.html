@@ -16,28 +16,33 @@
                 <div class="header-logo">
                     <img src="img/logo.svg" alt="">
                 </div>
-                <nav class="flex">
+                <nav class="flex nav" id="nav">
                     <a href="#">Our Story</a>
                     <a class="flex" href="#">
-                        <h5>How It Works </h5>
+                        How It Works 
                         <svg class="toggle" width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M6 6L0.803848 0L11.1962 0L6 6Z" fill="#595F68"/>
                             </svg>
                     </a>
                     <a href="#">FAQs</a>
-                    <a href="#">Chompeeeeee</a>
+                    <a href="#">Chompe</a>
                 </nav>
             </div>
-            <div class="header-auth">
+            <div class="header-auth" id="auth">
                 <a href="#">Log In</a>
-                <button class="btn">Sign Up</button>
+                <button class="btn" class="open-button" onclick="openForm()">Sign Up</button>
             </div>
+            <!-- ------------------------------burger -->
+            <button class="burger" type="button"  onclick="openBurger()">
+                <span class="burger_item">Menu</span>
+              <!-- ------------------------------burger -->    
+            </button>
         </div>
     </header>
     <!-- intro -->
-    <div class="intro">
+    <div class="intro" onclick="closeForm()">
        <img src="img/Group%20333.png" alt="">
-        <div class="form-change">
+        <div class="form-change" id="form_change">
         <h1>I am signing up as a</h1>
         <button class="change-btn">Client</button>
         <button class="change-btn">PR</button>
@@ -45,6 +50,6 @@
     </div>
     <!-- footer -->
     <footer></footer>
-
+<script src="script/app.js"></script>
 </body>
 </html>
