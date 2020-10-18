@@ -80,3 +80,41 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 700;
     margin-right: 40px;
 }
+
+
+/*Intro*/
+.form-change{
+    top: 30%;
+    left: 30%;
+    position: absolute;
+    width: 558px;
+    height: 335px;
+    background: #fff;
+    border: 1px solid #EDEDED;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.form-change h1{
+    padding: 87px 119px 73px 118px;
+    color: #602C83;
+}
+
+
+.change-btn{
+    font-size: 18px;
+    text-align: center;
+    width: 176px;
+    height: 64px;
+    color: #FA4616;
+    background: #fff;
+    border: 1.63099px solid #FA4616;
+    border-radius: 3px;
+    margin-left: 25px;
+}
+.change-btn:nth-child(2){
+    margin-left: 91px;
+    color: #fff;
+    border: none;
+    background: linear-gradient(132.97deg, rgba(250, 70, 22, 0.53) 7.3%, #FA4616 62.25%)
+}
