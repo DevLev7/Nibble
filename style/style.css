@@ -171,6 +171,9 @@ svg path:hover{
 
 
 /*Intro*/
+.intro{
+    padding-bottom: 90px;
+}
 .intro img{
     width: 100%;
 }
@@ -216,6 +219,113 @@ svg path:hover{
     color: #fff;
     transition: .4s linear;
 }
+
+/*Footer*/
+
+
+.footer{
+    background: url(../img/footer.png) no-repeat;
+    background-size: cover;
+}
+
+.footer-content img{
+    height: 42px;
+    padding-top: 42px
+}
+.about-list{
+    padding-top: 60px;
+}
+
+.about-list a{
+    text-decoration: none;
+    line-height: 28px;
+    color: #606060;
+
+}
+
+.about-list:nth-child(2){
+    padding-left: 48px
+}
+.about-list:nth-child(3){
+    padding-left: 66px
+}
+.about-list:nth-child(4){
+    padding-left: 54px
+}
+
+.about-list:nth-child(5){
+    padding-left: 54px
+}
+.about-title{
+    font-weight: 700;
+    font-size: 13px;
+    color: #602C83;
+    line-height: 36px;
+}
+
+
+.about-list span{
+    line-height: 17.57px;
+    padding-top: 3px;
+    font-size: 14px;
+}
+
+.form-footer{
+    padding-top: 15px;
+}
+
+.form-footer input{
+    width: 265px;
+    padding: 5px 0 6px 14px;
+    border: 1px solid #ABABAB;
+    font-size: 14px;
+    border-radius: 2px;
+}
+
+.form-footer input::placeholder{
+    color: #A9A9A9;
+}
+
+.form-footer button{
+    padding: 10px 20px;
+    font-size: 12px;
+    line-height: 15.06px;
+    color: #fff;
+    background: #9D71C7;
+    border-radius: 3px;
+    border: none;
+    margin-left:13px;
+}
+
+.footer-subtitle{
+    justify-content: flex-end;
+    padding: 45px 140px 49px 0px;
+}
+
+.footer-social{
+    padding: 60px 0 0 49px;
+}
+
+.social-title{
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+}
+
+.footer-social svg{
+    padding-left: 32px;
+}
+
+.footer-social svg path:hover{
+    fill: #9D71C7;
+}
+
+
+
+
+
+
 
 @media(max-width:375px){
     .nav, .header-auth{
