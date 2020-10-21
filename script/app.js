@@ -9,13 +9,22 @@ function openForm() {
     document.getElementById("form_change").style.display = "none";
   }
 
-function openBurger() {
-  document.getElementById("nav").style.display = "block"
-  document.getElementById("nav").style.display = "flex"
-  document.getElementById("auth").style.display = "block"
-  document.getElementById("auth").style.display = "flex"
+  function openForm_signup() {
+    document.getElementById("form_signup").style.display = "flex";
+  }
+  
+   
 
-}  
+ 
+
+ $(document).ready(function() {
+  $('.burger').click(function() {
+      $('.burger_item').toggleClass('open-menu');
+      $('.nav').toggleClass('open-menu');
+      $('.header-auth').toggleClass('open-menu');
+  });
+});
+
 
  
 

@@ -169,10 +169,38 @@ svg path:hover{
     bottom: -8px;
 }
 
+/* .burger_item.open-menu {
+    opacity:0; 
+    transition: 0.5s; 
+}
+.burger_item.open-menu:before {
+    transform: rotate(38deg);
+    top: 16px;
+    transition: 0.4s;
+}
+.burger_item.open-menu:after {
+    transform: rotate(-38deg);
+    bottom: 16px;
+    transition: 0.4s;
+} */
+
+.nav.open-menu {
+    display: flex;
+}
+
+.header-auth.open-menu {
+    display: flex;
+}
+
 
 /*Intro*/
 .intro{
-    padding-bottom: 90px;
+    width: 100%;
+    min-height: 614px;
+    background: url(../img/bg.png) no-repeat;
+    background-size: cover;
+    margin-bottom: 60px;
+    
 }
 .intro img{
     width: 100%;
@@ -218,6 +246,243 @@ svg path:hover{
     border: none;
     color: #fff;
     transition: .4s linear;
+}
+
+.form-signup{
+    display: none;
+   margin: auto;
+    /* display: flex; */
+    flex-direction: column;
+    top: 10%;
+    left: 40%;
+    
+    width: 362px;
+    height: auto;
+    background: #fff;
+    border: 1px solid #fff; 
+}
+
+.form-signup h1{
+    color: #383838;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.form-signup .input_text{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding: 0 20px;
+    height: 55px;
+    background: #FAFAFB;
+    border: 1px solid #E7E8EA;
+    border-radius: 4px;
+    margin: 0 0 20px 0;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    
+}
+
+.form-signup .input_text::placeholder{
+    color: #AAB2BD;
+
+}
+
+.input_text:focus {
+    border: 2px solid  #FA4616;
+   }
+
+   .input_text,
+.input_text:active,
+.input_text:focus {
+outline: none;
+}
+
+.form-signup label{
+    color: #9D71C7;
+    
+}
+
+.form-signup input[type="checkbox"]:checked, 
+.form-signup input[type="checkbox"]:not(:checked)
+
+{
+    position: absolute;
+    left: -9999px;
+}
+
+.form-signup input[type="checkbox"]:checked + label, 
+.form-signup input[type="checkbox"]:not(:checked) + label
+ {
+    display: inline-block;
+    position: relative;
+    padding-left: 38px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.form-signup input[type="checkbox"]:checked + label:before, 
+.form-signup input[type="checkbox"]:not(:checked) + label:before
+{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.form-signup input[type="checkbox"]:checked + label:before{
+    background-color:#9D71C7;
+}
+
+.form-signup input[type="checkbox"]:checked + label:after, 
+.form-signup input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.form-signup input[type="checkbox"]:checked + label:after, 
+.form-signup input[type="checkbox"]:not(:checked) + label:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.form-signup input[type="radio"]:checked + label:after, 
+.form-signup input[type="radio"]:not(:checked) + label:after {
+    left: 5px;
+    top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+.form-signup .check1{
+    margin-top: 25px;
+}
+
+.form-signup .check2{
+    margin-top: 17px;
+    margin-bottom: 32px;
+}
+
+.form-signup .change-btn{
+    margin: 0 auto 32px auto;
+    width: 212px;
+    height: 53px;
+    
+   
+   
+}
+.form-signup span{
+margin: auto;
+position: relative;
+}
+
+.form-signup span::before{
+  
+        content: "";
+        height: 1px;
+        width: 163px;
+        margin-top: 9px;
+        position: absolute;
+        left: 20px;
+        background-color: #AAB2BD;
+    }
+    
+
+
+.form-signup span::after {
+    content: "";
+    height: 1px;
+    width: 163px;
+    margin-top: 9px;
+    position: absolute;
+    right: 20px;
+    
+    background-color: #AAB2BD;
+}
+
+.form-signup h6{
+    margin: auto;
+    font-size: 14px;
+    color: #FA4616;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.button_social{
+    
+    margin: auto;
+}
+
+.button_social svg{
+    top: 4px;
+    position: relative;
+}
+
+.button_social svg path,.btn-social:hover{
+    fill: #FFE3DC ;
+}
+
+
+.btn-social,.button_social svg path{
+    fill: #FA4616 ;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: 1px solid #FFE3DC;
+    background-color: #FFE3DC;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    padding: 11px 25px;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: #FA4616;
+
+   
+    box-sizing: border-box;
+     border-radius: 3px;
+}
+
+.btn-social:first-child{
+    margin-right: 14px;
+}
+
+.btn-social,
+.btn-social,
+.btn-social {
+    outline: none;
+}
+
+.btn-social:hover{
+    transition: .4s linear;
+    opacity: 0.9;
+    background-color: #FA4616 ;
+    color: #ffffff;
 }
 
 /*Footer*/
@@ -328,17 +593,42 @@ svg path:hover{
 
 
 @media(max-width:375px){
-    .nav, .header-auth{
+    .nav{
         display: none;
-        background-color:#31344e;
-        width: 100%;
-        flex-direction: column;
-        text-align: left;
-        position: absolute;
-        top: 15%;
-        right: -90px;
+    padding: 15px 0 10px 15px;
+    background-color: #FFA68E;
+    width: 60%;
+    flex-direction: column;
+    text-align: left;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    
 
         }
+    
+    .header .nav a{
+        color: black;
+        padding-top: 8px;
+    }    
+
+        .header-auth{
+            display: none;
+            padding: 15px 0 10px 15px;
+            background-color: #FFA68E;
+            width: 60%;
+            flex-direction: column;
+            text-align: left;
+            position: absolute;
+            top: 29%;
+            right: 0;
+    
+            }   
+            
+        .btn{
+            margin-top: 15px;
+            width: 60%;
+        }    
     .nav.show{
         display: flex;
     }
